@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nyan Kat</title>
+    <style>
+      .start-button {
+        font-size: 20px;
+        padding: 0.3em 1em;
+        border: none;
+        outline: none;
+        color: rgb(255, 255, 255);
+        background: turquoise;
+        cursor: pointer;
+        position: absolute;
+        left: 14em;
+        top: 1em;
+        z-index: 0;
+        border-radius: 10px;
+      }
+      .container {
+        position: absolute;
+        top: 8px;
+        text-align: center;
+      }
+      .story {
+        font-size: 20px;
+        position: absolute;
+        left: 385px;
+        top: 0px;
+        z-index: 5;
+        border: 2px solid turquoise;
+        text-align: center;
+        width: 370px;
+        height: 482px;
+      }
+      .faded-beach {
+        position: absolute;
+        right: 0px;
+        opacity: 0.4;
+        top: 0px;
+        z-index: 0;
+        width: 370px;
+        height: 483px;
+      }
+      p {
+        margin: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <audio
+      id="audio"
+      src="sea-and-seagull-wave-5932.mp3"
+      playsinline=""
+    ></audio>
+    <button class="start-button">Play</button>
+    <div id="app"></div>
+    <script src="js/data.js"></script>
+    <script src="js/Enemy.js"></script>
+    <script src="js/Player.js"></script>
+    <script src="js/engine-utilities.js"></script>
+    <script src="js/Engine.js"></script>
+    <script src="js/main.js"></script>
+    <div class="container">
+      <div class="story">
+        <img class="faded-beach" src="images/beach-B.png" alt="beach" />
+        <h1>🐢Wee Sea Turtle🐢</h1>
+        <p>
+          Help! The poor wee baby sea turtle needs your guidance to escape the
+          seagulls!
+        </p>
+        <p>Press "Play" in the top right corner to start the game!</p>
+        <p>
+          Use your arrow keys to move left and right and avoid the birds as long
+          as possible.
+        </p>
+        <p>🐙</p>
+      </div>
+    </div>
+  </body>
+</html>
